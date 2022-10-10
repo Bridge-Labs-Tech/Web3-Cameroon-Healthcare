@@ -22,12 +22,18 @@ STATIC_DIR=os.path.join(BASE_DIR,'static')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(0l!!s0)d1akg2t1d*(x^cdk(c0st+@*6kkssvs_8k2*-2%0v+'
+#SECRET_KEY = '(0l!!s0)d1akg2t1d*(x^cdk(c0st+@*6kkssvs_8k2*-2%0v+'
+
+# Read SECRET_KEY from an environment variable
+import os
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','(0l!!s0)d1akg2t1d*(x^cdk(c0st+@*6kkssvs_8k2*-2%0v+')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
 
 
 # Application definition
