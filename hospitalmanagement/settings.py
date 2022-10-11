@@ -35,7 +35,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY','(0l!!s0)d1akg2t1d*(x^cdk(c0st+@
 DEBUG = True
 #DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 
