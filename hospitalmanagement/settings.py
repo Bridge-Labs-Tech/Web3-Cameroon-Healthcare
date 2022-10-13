@@ -161,6 +161,7 @@ EMAIL_RECEIVING_USER = ['to@gmail.com'] # email on which you will receive messag
 # https://pypi.org/project/whitenoise/
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_DIR= (os.path.join(BASE_DIR,'static'),)
