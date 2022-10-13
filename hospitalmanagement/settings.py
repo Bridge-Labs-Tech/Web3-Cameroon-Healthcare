@@ -48,8 +48,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-        'hospital',
-        'widget_tweaks',
+    'hospital',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
