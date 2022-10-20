@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Tahoma:300,400');
+@import url('https://fonts.googleapis.com/css?family=angelia');
+*{
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    display: inline;
+}
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: lighter;
+    border-bottom: 1px solid #009688;
+}
+.main-nav li{
+    padding: 0 5%;
+}
+.nav a:hover{
+    background-color: #49afa5;
+}
+.main-header{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(medworld.jpg);
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.site-name{
+    text-align: center;
+    margin: 0;
+    font-size: 5em;
+    font-family: verdana;
+    color: white;
+}
+.site-name-large{
+    font-size: 5em;
+}
+.content-section{
+    margin:1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.section-header{
+    font-family: angelia;
+    font-weight: normal;
+    color:rgb(71, 71, 100);
+    text-align: center;
+    font-size: 2em;
+}
+.about-image{
+    float:left;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.main-footer{
+    background-color: aquamarine;
+    color: white;
+    padding: .25em 0;
+}
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container{
+    flex-grow: 1;
+    text-align: end;
+}
+.footer-nav li{
+    padding: 0 .5em;
+}
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
